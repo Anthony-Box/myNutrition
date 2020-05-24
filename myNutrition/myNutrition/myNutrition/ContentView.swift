@@ -58,26 +58,18 @@ struct ContentView: View {
                 ImagePost1()
                 ImagePost1()
                 }
-            
-            NavigationView{
+                
+
                 HStack{
-                    NavigationLink(destination: Text("Second View")) {
-                        Image("home_24px")
-                    }.navigationBarTitle("Navigation")
-                    NavigationLink(destination: Text("New Posts")){
-                        Image("NewPostIcon")
-                    }
-                }
-//                HStack{
-//                    Image("home_24px")
-//
-//                    Image("NewPostIcon")
-//
-//                    Image("InsightsIcon")
-//
-//                    Image("MessagesIcon")
-//
-//                }.padding()
+                    Image("home_24px")
+
+                    Image("NewPostIcon")
+
+                    Image("InsightsIcon")
+
+                    Image("MessagesIcon")
+
+                }.padding()
             }
             
         }
@@ -86,5 +78,4 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
-}
 }
